@@ -17,26 +17,25 @@ var pages = <String, String>{
   'robots.txt': 'Hints for web robots',
   'humans.txt': 'We are people, not machines'
 };
-var nameSet = Set<String>.from(names);
-var views = Map<int, View>();
+
+void main(List<String> args) {
+
+//var nameSet = Set<String>.from(names);
 var names = <String>[];
 names.addAll(['Seth', 'Kathy', 'Lars']);
 print(names is List<String>); // true
-
+  
+}
 class Foo<T extends Object> {
   // Any type provided to Foo for T must be non-nullable.
 }
-class Foo<T extends SomeBaseClass> {
-  // Implementation goes here...
-  String toString() => "Instance of 'Foo<$T>'";
-}
+//class Foo<T extends SomeBaseClass> {
+//class Extender extends SomeBaseClass {...}
 
-class Extender extends SomeBaseClass {...}
-
-var someBaseClassFoo = Foo<SomeBaseClass>();
-var extenderFoo = Foo<Extender>();
+//var someBaseClassFoo = Foo<SomeBaseClass>();
+//var extenderFoo = Foo<Extender>();
 var foo = Foo();
-print(foo); // Instance of 'Foo<SomeBaseClass>'
+//print(foo); // Instance of 'Foo<SomeBaseClass>'
 
 T first<T>(List<T> ts) {
   // Do some initial work or error checking, then...

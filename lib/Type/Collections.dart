@@ -21,10 +21,12 @@ var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
 var names = <String>{};
 // Set<String> names = {}; // This works, too.
 // var names = {}; // Creates a map, not a set.
+void main(List<String> args) {
+  
 
 var elements1 = <String>{};
-elements.add('fluorine');
-elements.addAll(halogens);
+//elements.add('fluorine');
+//elements.addAll(halogens);
 
 var elements = <String>{};
 elements.add('fluorine');
@@ -53,24 +55,24 @@ var nobleGases = {
   18: 'argon',
 };
 
-var gifts = Map<String, String>();
+var gifts2 = Map<String, String>();
 gifts['first'] = 'partridge';
 gifts['second'] = 'turtledoves';
 gifts['fifth'] = 'golden rings';
 
-var nobleGases = Map<int, String>();
+//var nobleGases = Map<int, String>();
 nobleGases[2] = 'helium';
 nobleGases[10] = 'neon';
 nobleGases[18] = 'argon';
 
 
-var gifts = {'first': 'partridge'};
+//var gifts = {'first': 'partridge'};
 //gifts['fourth'] = 'calling birds'; // Add a key-value pair
 
 var gifts1 = {'first': 'partridge'};
 //assert(gifts['fifth'] == null);
 
-var gifts2 = {'first': 'partridge'};
+//var gifts2 = {'first': 'partridge'};
 //assert(gifts['fifth'] == null);
 
 var gifts3 = {'first': 'partridge'};
@@ -89,12 +91,10 @@ var list5 = [1, 2, 3];
 var list6 = [0, ...list];
 //assert(list2.length == 4);
 
-var list7 = [0, ...?list];
-//assert(list2.length == 1);
-
 var nav = ['Home', 'Furniture', 'Plants'];
 var nav1 = ['Home', 'Furniture', 'Plants',  'Inventory'];
 var listOfInts = [1, 2, 3];
 var listOfStrings = ['#0', for (var i in listOfInts) '#$i'];
 //assert(listOfStrings[1] == '#1');
 
+}

@@ -1,8 +1,8 @@
 /// Sets the [bold] and [hidden] flags ...
-void enableFlags(bool bold == false, bool hidden == false) {
+//void enableFlags(bool bold == false, bool hidden == false) {
 
 
-}
+//}
 
 
 //const Scrollbar({super.key, required Widget child});
@@ -18,7 +18,7 @@ String say(String from, String msg, [String? device]) {
 //assert(say('Bob', 'Howdy', 'smoke signal') ==
     //'Bob says Howdy with a smoke signal');
 
-    String say(String from, String msg, [String device = 'carrier pigeon']) {
+    String say1(String from, String msg, [String device = 'carrier pigeon']) {
   var result = '$from says $msg with a $device';
   return result;
 }

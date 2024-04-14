@@ -1,58 +1,38 @@
 
 void main(List<String> args) {
   
- if (isRaining()) {
-  you.bringRainCoat();
-} else if (isSnowing()) {
-  you.wearJacket();
-} else {
-  car.putTopDown();
-}
+  //if (isRaining()) {
+ // you.bringRainCoat();
+//} else if (isSnowing()) {
+ // you.wearJacket();
+//} else {
+//  car.putTopDown();
+//}
 
-if (pair case [int x, int y]) return Point(x, y);
+//if (pair case [int x, int y]) return Point(x, y);
 
-if (pair case [int x, int y]) {
-  print('Was coordinate array $x,$y');
-} else {
+//if (pair case [int x, int y]) {
+ // print('Was coordinate array $x,$y');
+//} else {
   throw FormatException('Invalid coordinates.');
 }
-
+class A{
 var command = 'OPEN';
-switch (command) {
-  case 'OPEN':
-    executeOpen();
-    continue newCase; // Continues executing at the newCase label.
-
-  case 'DENIED': // Empty case falls through.
-  case 'CLOSED':
-    executeClosed(); // Runs for both DENIED and CLOSED,
-
-  newCase:
-  case 'PENDING':
-    executeNowClosed(); // Runs for both OPEN and PENDING.
-}
 
 // Where slash, star, comma, semicolon, etc., are constant variables...
-switch (charCode) {
-  case slash || star || plus || minus: // Logical-or pattern
-    token = operator(charCode);
-  case comma || semicolon: // Logical-or pattern
-    token = punctuation(charCode);
-  case >= digit0 && <= digit9: // Relational and logical-and patterns
-    token = number();
-  default:
-    throw FormatException('Invalid');
-}
-}
-// Non-exhaustive switch on bool?, missing case to match null possibility:
-switch (nullableBool) {
-  case true:
-    print('yes');
-  case false:
-    print('no');
+//switch (charCode) {
+  //case slash || star || plus || minus: // Logical-or pattern
+  //  token = operator(charCode);
+  //case comma || semicolon: // Logical-or pattern
+  //  token = punctuation(charCode);
+ // case >= digit0 && <= digit9: // Relational and logical-and patterns
+ //   token = number();
+ // default:
+  //  throw FormatException('Invalid');
 }
 
-sealed class Shape {}
+
+ class Shape {}
 
 class Square implements Shape {
   final double length;
@@ -64,26 +44,26 @@ class Circle implements Shape {
   Circle(this.radius);
 }
 
-double calculateArea(Shape shape) => switch (shape) {
-      Square(length: var l) => l * l,
-      Circle(radius: var r) => math.pi * r * r
-    };
+//double calculateArea(Shape shape) => switch (shape) {
+ //     Square(length: var l) => l * l,
+  //    Circle(radius: var r) => math.pi * r * r
+ //   };
 
     // Switch statement:
-switch (something) {
-  case somePattern when some || boolean || expression:
+//switch (something) {
+ // case somePattern when some || boolean || expression:
     //             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Guard clause.
-    body;
-}
+ //   body;
+//}
 
 // Switch expression:
-var value = switch (something) {
-  somePattern when some || boolean || expression => body,
+//var value = switch (something) {
+ // somePattern when some || boolean || expression => body,
   //               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Guard clause.
-}
+//}
 
 // If-case statement:
-if (something case somePattern when some || boolean || expression) {
+//if (something case somePattern when some || boolean || expression) {
   //                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Guard clause.
-  body;
-}
+ // body;
+//}

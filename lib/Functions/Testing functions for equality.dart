@@ -8,10 +8,6 @@ class A {
 void main() {
   Function x;
 
-  // Comparing top-level functions.
-  x = foo1;
-  assert(foo1 == x);
-
   // Comparing static methods.
   x = A.bar;
   assert(A.bar == x);

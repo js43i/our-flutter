@@ -23,8 +23,9 @@ class Point1 {
   late double? z = this.x;
 
   // OK, `this.fieldName` is a parameter declaration, not an expression:
-  Point1(this.x, this.y);
+  //Point1(this.x, this.y);
 }
+
 class ProfileMark {
   final String name;
   final DateTime start = DateTime.now();

@@ -1,4 +1,4 @@
-var record = ('first', a: 2, b: true, 'last');
+//var record = ('first', a: 2, b: true, 'last');
 // Record type annotation in a variable declaration:
 
 //(int, int) swap((int, int) record) {
@@ -24,32 +24,32 @@ var record = ('first', a: 2, b: true, 'last');
 
 //recordAB = recordXY; // OK.
 
-var record = ('first', a: 2, b: true, 'last');
+//var record = ('first', a: 2, b: true, 'last');
 
-print(record.$1); // Prints 'first'
-print(record.a); // Prints 2
-print(record.b); // Prints true
-print(record.$2); // Prints 'last'
+//print(record.$1); // Prints 'first'
+//print(record.a); // Prints 2
+//print(record.b); // Prints true
+//print(record.$2); // Prints 'last'
 
-(num, Object) pair = (42, 'a');
+//(num, Object) pair = (42, 'a');
 
-var first = pair.$1; // Static type `num`, runtime type `int`.
-var second = pair.$2; // Static type `Object`, runtime type `String`.
+//var first = pair.$1; // Static type `num`, runtime type `int`.
+//var second = pair.$2; // Static type `Object`, runtime type `String`.
 
-(int x, int y, int z) point = (1, 2, 3);
-(int r, int g, int b) color = (1, 2, 3);
+//(int x, int y, int z) point = (1, 2, 3);
+//(int r, int g, int b) color = (1, 2, 3);
 
-print(point == color); // Prints 'true'.
+//print(point == color); // Prints 'true'.
 
-({int x, int y, int z}) point = (x: 1, y: 2, z: 3);
-({int r, int g, int b}) color = (r: 1, g: 2, b: 3);
+//({int x, int y, int z}) point = (x: 1, y: 2, z: 3);
+//({int r, int g, int b}) color = (r: 1, g: 2, b: 3);
 
-print(point == color); // Prints 'false'. Lint: Equals on unrelated types.
+//print(point == color); // Prints 'false'. Lint: Equals on unrelated types.
 
 // Returns multiple values in a record:
-(String name, int age) userInfo(Map<String, dynamic> json) {
-  return (json['name'] as String, json['age'] as int);
-}
+//(String name, int age) userInfo(Map<String, dynamic> json) {
+ // return (json['name'] as String, json['age'] as int);
+//}
 
 final json = <String, dynamic>{
   'name': 'Dash',
@@ -58,7 +58,7 @@ final json = <String, dynamic>{
 };
 
 // Destructures using a record pattern with positional fields:
-var (name, age) = userInfo(json);
+//var (name, age) = userInfo(json);
 
 /* Equivalent to:
   var info = userInfo(json);
@@ -66,7 +66,7 @@ var (name, age) = userInfo(json);
   var age  = info.$2;
 */
 
-({String name, int age}) userInfo(Map<String, dynamic> json)
+//({String name, int age}) userInfo(Map<String, dynamic> json)
 // ···
 // Destructures using a record pattern with named fields:
-final (:name, :age) = userInfo(json);
+//final (:name, :age) = userInfo(json);
